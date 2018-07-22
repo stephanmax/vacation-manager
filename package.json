@@ -1,0 +1,53 @@
+{
+  "name": "vacation-manager",
+  "version": "1.0.0",
+  "description": "A simple vacation manager (test task)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --port 3000 --progress --hot --open",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanmax/vacation-manager.git"
+  },
+  "author": "Stephan Max <hi@stephanmax.is> (http://stephanmax.is/)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/stephanmax/vacation-manager/issues"
+  },
+  "homepage": "https://github.com/stephanmax/vacation-manager#readme",
+  "dependencies": {
+    "nanoid": "^1.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "reselect": "^3.0.1",
+    "spectre.css": "^0.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "deep-freeze": "0.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "jest": {
+    "setupFiles": [
+      "./__tests__/global.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "global.js"
+    ]
+  }
+}
